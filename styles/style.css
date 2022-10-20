@@ -5,15 +5,22 @@
 html {
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
-    color: #2B292D;
+    color: #2b292d;
 }
 
 .page {
-    width: 1400px;
-    margin: auto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@media (min-width: 400px) {
+    .page {
+        width: 1400px;
+        margin: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .action-button {
