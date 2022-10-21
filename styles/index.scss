@@ -3,6 +3,7 @@
 @import 'header.scss';
 @import 'headline.scss';
 @import 'style.scss';
+@import 'order.scss';
 
 * {
     box-sizing: border-box;
@@ -29,10 +30,11 @@ html {
     border: none;
     border-radius: 2px;
 }
-
-@media (min-width: 400px) {
-    .page {
-        width: 1400px;
+.page {
+    width: 100%;
+    
+    @include for-large-up {
+        max-width: 1400px;
         margin: auto;
         min-height: 100vh;
         display: flex;
