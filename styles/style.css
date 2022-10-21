@@ -33,3 +33,16 @@ html {
     border: none;
     border-radius: 2px;
 }
+
+@media (min-width: 400px) {
+    .hide_desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 399px) {
+    .hide_mobile {
+        display: none;
+    }
+}
+
