@@ -670,7 +670,6 @@ html {
   max-width: 290px;
   margin: auto;
   margin-top: 15px;
-  padding-top: 15px;
 }
 .card-wrapper:hover {
   background: #3141c5;
@@ -688,9 +687,10 @@ html {
 .card-wrapper__image {
   display: block;
   margin: auto;
+  padding-top: 22px;
 }
 .card-wrapper__title {
-  padding-top: 15px;
+  padding-top: 22px;
   text-align: center;
   display: block;
   font-weight: 700;
