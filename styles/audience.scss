@@ -72,6 +72,10 @@
         @include for-large-up {
             flex-direction: row;
             margin-top: 34px;
+
+            :last-child {
+              margin-top: 0;
+            }
         }
     }
 

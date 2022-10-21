@@ -638,6 +638,9 @@ html {
     flex-direction: row;
     margin-top: 34px;
   }
+  .audience__buttons :last-child {
+    margin-top: 0;
+  }
 }
 @media screen and (max-width: 399px) {
   .audience__action-btn {
