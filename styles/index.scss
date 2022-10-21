@@ -1,3 +1,9 @@
+@import 'breakpoint.scss';
+@import 'footer.scss';
+@import 'header.scss';
+@import 'headline.scss';
+@import 'style.scss';
+
 * {
     box-sizing: border-box;
 }
@@ -13,16 +19,6 @@ html {
     overflow-x: hidden;
 }
 
-@media (min-width: 400px) {
-    .page {
-        width: 1400px;
-        margin: auto;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 .action-button {
     width: 160px;
     height: 48px;
@@ -35,14 +31,23 @@ html {
 }
 
 @media (min-width: 400px) {
-    .hide_desktop {
+    .page {
+        width: 1400px;
+        margin: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.hide_desktop {
+    @include for-large-up {
         display: none;
     }
 }
 
-@media (max-width: 399px) {
-    .hide_mobile {
+.hide_mobile {
+    @include for-large-down {
         display: none;
     }
 }
-
