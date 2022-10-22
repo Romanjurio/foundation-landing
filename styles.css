@@ -660,7 +660,7 @@ html {
   .audience__cards {
     display: flex;
     justify-content: center;
-    margin-top: 111px;
+    margin: 111px 131px 0 130px;
   }
 }
 
@@ -685,6 +685,9 @@ html {
     margin-top: 0;
     margin-left: 30px;
     margin-right: 0;
+  }
+  .card-wrapper:first-child {
+    margin-left: 0;
   }
 }
 .card-wrapper__image {
